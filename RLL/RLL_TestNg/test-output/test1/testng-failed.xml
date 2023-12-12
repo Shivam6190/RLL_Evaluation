@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test1]">
+  <listeners>
+    <listener class-name="com.app.TestPages.ItestListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Adding New Service(failed)">
+    <classes>
+      <class name="com.app.TestPages.OpenMRSAddNewServicePageTest">
+        <methods>
+          <include name="AddNewService" invocation-numbers="0 1 2"/>
+          <include name="InitalizeExtentReport"/>
+          <include name="getnameMethod"/>
+          <include name="CloseApp"/>
+          <include name="setUp"/>
+          <include name="generateTestStatus"/>
+        </methods>
+      </class> <!-- com.app.TestPages.OpenMRSAddNewServicePageTest -->
+    </classes>
+  </test> <!-- Adding New Service(failed) -->
+</suite> <!-- Failed suite [test1] -->
